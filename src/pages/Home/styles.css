@@ -1,0 +1,131 @@
+.conteudo {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.background {
+    height: 60vh;
+    position: relative;
+    margin-top: 40px;
+    transition: all 0.3s ease-in-out;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.info {
+    width: 60%;
+    margin-right: 90px;
+    margin-top: 40px;
+    color: #5F1B46;
+}
+
+input {
+    border: 1px solid #999999;
+    border-radius: 13px;
+    min-width: 250px;
+    margin-right: 12px;
+    width: 86px;
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    color: #203338;
+}
+
+button {
+    border: 1px solid #999999;
+    border-radius: 13px;
+    margin-right: 12px;
+    width: 100px;
+    background: #203338;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #5F1B46;
+}
+
+.perfil {
+    display: flex;
+    margin: 40px 0;
+
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 2px solid #5F1B46;
+    margin-right: 32px;
+
+}
+
+.profile h3 {
+    color: #707070;
+    font-size: 30px;
+    margin: 0;
+}
+
+.perfil span {    
+    display: block;
+    color: #707070;
+    font-size: 14px;
+    margin: 0;
+}
+
+.perfil p {
+    color: #707070;
+    font-size: 124x;
+    margin: 20px 0 0 0;
+}
+
+.repositorio {
+    font-size: 32px;
+    color: #203338;
+    margin: 12px 0;
+    text-align: center;
+}
+
+h4.repositorio {
+    padding-right: 120px;
+    }
+
+@media screen and (max-width: 1020px) {
+    .background {
+        height: 20vh;
+        position: absolute;
+        margin: 0px 100px;
+    }
+
+
+    .info{
+        margin-top: 200px;
+    }
+
+    input {
+        margin-top: 250px;
+        margin: 0 auto;
+        font-size: 17px;
+        min-width: 115px;
+        border-radius: 10px;
+    }
+    
+    button {
+        font-size: 17px;
+        width: 75px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+}
